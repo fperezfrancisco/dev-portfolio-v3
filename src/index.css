@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "tailwindcss";
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", serif;
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", serif;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* COLOR SCHEME  */
+
+.bkgMainColor {
+  background-color: #fff;
+}
+
+.darkMode.bkgMainColor {
+  background-color: #030c13;
+}
+
+.primaryText {
+  color: #012a4a;
+}
+
+.darkBackgroundBlue {
+  background-color: #012a4a;
+}
+
+.darkMode .primaryText {
+  color: #fff;
+}
+
+.accentText {
+  color: #014f86;
+}
+
+.darkMode .accentText {
+  color: #74bff3;
+}
+
+.accentColor {
+  background-color: #014f86;
+}
+
+.darkMode .accentColor {
+  background-color: #74bff3;
+}
+
+.accentLighterText {
+  color: #01497c;
+}
+
+.accentLighterColor {
+  background-color: #01497c;
+}
+
+.backgroundLinearGradient {
+  background-image: linear-gradient(90deg, #012a4a 0%, #0067b0 100%);
+}
+
+.darkMode .backgroundLinearGradient {
+  background-image: linear-gradient(90deg, #0067b0 0%, #74bff3 100%);
+}
+
+.primaryBtn {
+  cursor: pointer;
+  padding: 0.5rem 2.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #0067b0;
+  background-image: linear-gradient(90deg, #012a4a 0%, #0067b0 100%);
+}
+
+.contactForm .primaryBtn {
+  padding: 1.25rem 2.5rem;
+  font-weight: 500;
+}
+
+.primaryBtn:hover {
+  background-image: none;
+  background-color: #012a4a;
+}
+
+.darkMode .primaryBtn {
+  cursor: pointer;
+  background-color: #0067b0;
+  background-image: linear-gradient(90deg, #0067b0 0%, #74bff3 100%);
+}
+
+.darkMode .primaryBtn:hover {
+  background-image: none;
+  background-color: #0067b0;
+}
+
+.secondaryBtn {
+  cursor: pointer;
+  padding: 0.5rem 2.5rem;
+  border-radius: 1rem;
+  color: #0067b0;
+  border: 2px solid #0067b0;
+  background-color: transparent;
+}
+
+.secondaryBtn:hover {
+  background-color: #0067b0;
+  color: #fff;
+}
+
+.darkMode .secondaryBtn:hover {
+  background-color: #fff;
+  color: #0067b0;
+}
+
+.darkMode .secondaryBtn {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
