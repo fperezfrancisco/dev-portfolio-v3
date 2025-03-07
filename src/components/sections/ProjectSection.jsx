@@ -50,7 +50,7 @@ const ProjectSection = () => {
     {
       title: "Wordle Game Clone",
       previewText:
-        "This multi-page website was designed and developed to serve real-world users, enabling them to easily view and purchase soccer training bundles, camps, and private sessions.",
+        "This is a fully functioning replica of the famous guessing game - Wordle. Users can play the game as well as keep track of important stats.",
       projectTools: ["HTML", "CSS", "Javascript", "Dictionary API"],
       liveUrl: "https://fperezfrancisco.github.io/wordle/",
       githubUrl: "https://github.com/fperezfrancisco/wordle",
