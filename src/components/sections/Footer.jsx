@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="w-full bg-[#012a4a] text-white">
-      <div className="w-full max-w-[1440px] mx-auto px-12 py-16 flex justify-between">
+      <div className="w-full max-w-[1440px] mx-auto p-4 md:px-12 md:py-16 flex justify-between">
         <span className="mr-4 fjalla-one-regular font-semibold text-2xl">
           <a href="#">FJP</a>
         </span>

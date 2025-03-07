@@ -21,7 +21,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
       <div
-        className={`w-full h-full min-h-screen bodyContainer relative bkgMainColor transition-all ease-out duration-500 ${
+        className={`w-full max-w-screen h-full min-h-screen bodyContainer relative bkgMainColor transition-all ease-out duration-500 ${
           darkMode ? "darkMode" : ""
         }`}
       >
