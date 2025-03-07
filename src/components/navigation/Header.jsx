@@ -49,7 +49,7 @@ const Header = () => {
         }`}
       >
         <HiOutlineX
-          className="size-[24px] absolute z-40 top-4 right-4 hover:scale-110 transition-all ease-out duration-200 cursor-pointer text-white"
+          className="size-[24px] absolute z-50 top-4 right-4 hover:scale-110 transition-all ease-out duration-200 cursor-pointer text-white"
           onClick={handleToggleMenu}
         />
         <ul className="flex flex-col text-white items-start gap-4 mt-4">
