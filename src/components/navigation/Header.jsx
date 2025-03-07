@@ -40,16 +40,17 @@ const Header = () => {
       <span className="flex md:hidden primaryText">
         <HiMenuAlt3
           onClick={handleToggleMenu}
-          className={`size-[24px] hover:scale-110 transition-all ease-out duration-200 cursor-pointer`}
+          className={`size-[32px] hover:scale-110 transition-all ease-out duration-200 cursor-pointer`}
         />
       </span>
       <div
-        className={`w-[250px] h-screen min-h-[500px] fixed z-50 darkBackgroundBlue top-0 m-0 right-0 p-8 py-12 transition-all ease-out duration-500 md:hidden ${
+        className={`w-[250px] h-screen min-h-[500px] fixed z-40 darkBackgroundBlue top-0 m-0 right-0 p-8 py-12 transition-all ease-out duration-500 md:hidden ${
           menuOpen ? "translate-x-0 block" : "translate-x-[250px]"
         }`}
       >
         <HiOutlineX
-          className="size-[24px] absolute z-50 top-4 right-4 hover:scale-110 transition-all ease-out duration-200 cursor-pointer text-white"
+          tabIndex={0}
+          className="size-[32px] absolute z-50 top-6 right-6 hover:scale-110 transition-all ease-out duration-200 cursor-pointer text-white"
           onClick={handleToggleMenu}
         />
         <ul className="flex flex-col text-white items-start gap-4 mt-4">
