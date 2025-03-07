@@ -44,8 +44,8 @@ const Header = () => {
         />
       </span>
       <div
-        className={`w-[240px] h-screen min-h-[500px] fixed z-50 darkBackgroundBlue top-0 right-0 p-8 py-12 block transition-all ease-out duration-500 md:hidden ${
-          menuOpen ? "translate-x-0" : "translate-x-[250px]"
+        className={`w-[240px] h-screen min-h-[500px] fixed z-50 darkBackgroundBlue top-0 right-0 p-8 py-12 transition-all ease-out duration-500 md:hidden ${
+          menuOpen ? "translate-x-0 block" : "translate-x-[250px hidden]"
         }`}
       >
         <HiOutlineX
