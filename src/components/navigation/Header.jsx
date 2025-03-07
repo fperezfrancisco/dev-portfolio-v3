@@ -16,18 +16,18 @@ const Header = () => {
   return (
     <header className="w-full py-4 px-8 sm:px-12  max-w-[1440px] mx-auto my-0 flex items-center justify-between">
       <span className="mr-4 fjalla-one-regular font-semibold text-2xl primaryText">
-        FJP
+        <a href="#">FJP</a>
       </span>
       <nav className="primaryText hidden md:flex">
         <ul className="flex items-center gap-8">
           <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
-            Projects
+            <a href="#projects">Projects</a>
           </li>
           <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
-            About
+            <a href="#about">About</a>
           </li>
           <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
-            Contact
+            <a href="#contact">Contact</a>
           </li>
           <li className="ml-8">
             <HiMoon
@@ -54,13 +54,13 @@ const Header = () => {
         />
         <ul className="flex flex-col text-white items-start gap-4 mt-4">
           <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
-            Projects
+            <a href="#projects">Projects</a>
           </li>
           <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
-            About
+            <a href="#about">About</a>
           </li>
           <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
-            Contact
+            <a href="#contact">Contact</a>
           </li>
           <li className="">
             <HiMoon

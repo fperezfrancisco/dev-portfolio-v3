@@ -9,7 +9,14 @@ import Footer from "./components/sections/Footer";
 export const ThemeContext = createContext();
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      return storedTheme === "dark";
+    } else {
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+  });
 
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>

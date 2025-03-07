@@ -1,4 +1,5 @@
 import React from "react";
+import { motion, useAnimation } from "motion/react";
 
 const skillsList = {
   frontend: [
@@ -16,12 +17,20 @@ const skillsList = {
 
 const AboutSection = () => {
   return (
-    <section className="w-full my-20 max-w-[1200px] mx-auto px-4 sm:px-12 py-[120px] flex flex-col gap-24">
+    <section
+      className="w-full my-20 max-w-[1200px] mx-auto px-4 sm:px-12 py-[120px] flex flex-col gap-24"
+      id="about"
+    >
       <div className="flex flex-col items-start lg:flex-row gap-8 lg:justify-between">
         <h2 className="fjalla-one-regular text-2xl md:text-4xl primaryText">
           About Me
         </h2>
-        <div className="w-full lg:w-2/3 primaryText flex flex-col gap-4">
+        <motion.div
+          className="w-full lg:w-2/3 primaryText flex flex-col gap-4"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+        >
           <p>
             I am a passionate front-end software developer well-versed in the
             core technologies of HTML, CSS, and JavaScript, with advanced
@@ -33,13 +42,18 @@ const AboutSection = () => {
             Outside of programming, I enjoy exercising, playing soccer, and
             traveling with friends & family.
           </p>
-        </div>
+        </motion.div>
       </div>
       <div className="flex flex-col items-start lg:flex-row gap-8 lg:justify-between">
         <h2 className="fjalla-one-regular text-2xl md:text-4xl primaryText">
           Education
         </h2>
-        <div className="flex flex-col gap-4 items-start primaryText w-full lg:w-2/3">
+        <motion.div
+          className="w-full lg:w-2/3 primaryText flex flex-col gap-4"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.65, ease: "easeOut" }}
+        >
           <ul className="flex flex-col items-start w-full gap-6">
             <li className="flex flex-col items-start gap-1">
               <p className="text-xl">B.A. Applied Mathematics</p>
@@ -52,14 +66,19 @@ const AboutSection = () => {
               <p className="accentText text-[0.9rem]">Aug 2024 - Dec 2024</p>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
       <div className="flex flex-col items-start lg:flex-row gap-8 lg:justify-between">
         <h2 className="fjalla-one-regular text-2xl md:text-4xl primaryText">
           Skills
         </h2>
         <div className="flex flex-col gap-8 items-start primaryText w-full lg:w-2/3">
-          <div className="flex flex-col items-start gap-2">
+          <motion.div
+            className="flex flex-col items-start gap-2"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.65, ease: "easeOut" }}
+          >
             <h3 className="primaryText text-xl">Frontend</h3>
             <div className="py-2 flex flex-wrap w-full gap-2">
               {skillsList &&
@@ -69,8 +88,13 @@ const AboutSection = () => {
                   </span>
                 ))}
             </div>
-          </div>
-          <div className="flex flex-col items-start gap-2">
+          </motion.div>
+          <motion.div
+            className="flex flex-col items-start gap-2"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.65, ease: "easeOut" }}
+          >
             <h3 className="primaryText text-xl">Backend</h3>
             <div className="py-2 flex flex-wrap w-full gap-2">
               {skillsList &&
@@ -80,8 +104,13 @@ const AboutSection = () => {
                   </span>
                 ))}
             </div>
-          </div>
-          <div className="flex flex-col items-start gap-2">
+          </motion.div>
+          <motion.div
+            className="flex flex-col items-start gap-2"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.65, ease: "easeOut" }}
+          >
             <h3 className="primaryText text-xl">Other Technologies</h3>
             <div className="py-2 flex flex-wrap w-full gap-2">
               {skillsList &&
@@ -91,7 +120,7 @@ const AboutSection = () => {
                   </span>
                 ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
