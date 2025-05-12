@@ -5,7 +5,7 @@ import { FaMailBulk } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useNavigate } from "react-router";
 import heroImg from "../../assets/portfolio-hero-art.png";
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/2025-resume.docx.pdf";
 
 // React
 import { motion, useAnimation } from "motion/react";
