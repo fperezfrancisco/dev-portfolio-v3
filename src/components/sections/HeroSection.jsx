@@ -26,7 +26,7 @@ const HeroSection = () => {
   }, [controls]);
 
   return (
-    <section className="w-full min-h-[70vh] max-w-[1200px] mx-auto px-4 sm:px-12 py-[100px] flex flex-col gap-12 lg:flex-row lg:justify-between lg:items-center lg:gap-4">
+    <section className="w-full min-h-[70vh] max-w-[1200px] mx-auto px-4 sm:px-12 py-[64px] flex flex-col gap-12 lg:flex-row lg:justify-between lg:items-center lg:gap-4">
       <div className="heroTextContainer flex flex-col items-center text-center w-full lg:items-start lg:text-left lg:max-w-[450px]">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -34,7 +34,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <h1 className="text-5xl fjalla-one-regular md:text-[64px] primaryText">
-            Hi, I'm Francisco
+            Francisco J Perez
           </h1>
         </motion.div>
         <motion.div
@@ -43,8 +43,11 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
         >
           <p className="primaryText my-2 md:text-xl md:my-4">
-            A <span className="accentText">front-end engineer</span> out of
-            Santa Clarita, California.
+            <span className="accentText capitalize">front-end engineer</span> |
+            React Js & Next Js Specialist <br></br>
+            <span className="font-light">
+              Building scalable, user-focused web applications
+            </span>
           </p>
         </motion.div>
         <motion.div

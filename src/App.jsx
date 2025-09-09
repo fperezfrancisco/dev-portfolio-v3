@@ -28,8 +28,8 @@ function App() {
         <Header />
         <main className="w-full h-full py-8">
           <HeroSection />
-          <ProjectSection />
           <AboutSection />
+          <ProjectSection />
           <ContactSection />
         </main>
         <Footer />

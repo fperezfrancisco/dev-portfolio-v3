@@ -9,9 +9,26 @@ import trilogy from "../../../public/project-thumbnails/trilogy.png";
 import trilogyWide from "../../../public/project-thumbnails-wide/trilogy-wide.png";
 import wordle from "../../../public/project-thumbnails/wordle.png";
 import wordlWide from "../../../public/project-thumbnails-wide/wordle-wide.png";
+import lasc from "../../../public/project-thumbnails/lasc-thumbnail.png";
 
 const ProjectSection = () => {
   const projectList = [
+    {
+      title: "LASC Youth Soccer Club Website",
+      previewText:
+        "A fully responsive commercial website for a youth soccer club serving 200+ families. This polished client project helped increase lead generation and player retention as well as increasing the user experience with added features like a dynamic news and events section. This website features a fully integrated content-management system via Strapi CMS where staff can dynamically manage content served on the website.",
+      projectTools: [
+        "Next Js",
+        "Strapi CMS",
+        "Tailwind CSS",
+        "Figma",
+        "Vercel",
+      ],
+      liveUrl: "https://lasc-website.vercel.app/",
+      githubUrl: "https://github.com/fperezfrancisco/lasc-website",
+      thumbnail: lasc,
+      thumbnailWide: lasc,
+    },
     {
       title: "Disney Clone",
       previewText:
