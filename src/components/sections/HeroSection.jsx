@@ -5,7 +5,7 @@ import { FaMailBulk } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useNavigate } from "react-router";
 import heroImg from "../../assets/portfolio-hero-art.png";
-import resume from "../../assets/2025-resume.docx.pdf";
+import resume from "../../assets/FranciscoJPerezFrontendEngineerResume.pdf";
 
 // React
 import { motion, useAnimation } from "motion/react";
@@ -43,8 +43,8 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
         >
           <p className="primaryText my-2 md:text-xl md:my-4">
-            A <span className="accentText">front-end software developer</span>{" "}
-            out of Santa Clarita, California.
+            A <span className="accentText">front-end engineer</span> out of
+            Santa Clarita, California.
           </p>
         </motion.div>
         <motion.div
