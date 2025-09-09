@@ -21,11 +21,12 @@ const Header = () => {
       <nav className="primaryText hidden md:flex">
         <ul className="flex items-center gap-8">
           <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
             <a href="#about">About</a>
           </li>
+          <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
+            <a href="#projects">Projects</a>
+          </li>
+
           <li className="hover:scale-110  transition-all ease-out duration-500 cursor-pointer">
             <a href="#contact">Contact</a>
           </li>

@@ -15,7 +15,10 @@ const ProjectPreview = ({ project }) => {
         onClick={handleLiveSite}
         className="aspect-video bg-neutral-200 rounded-2xl w-full hover:scale-105 cursor-pointer transition-all duration-250 ease-out md:w-3/5 md:max-w-[500px] md:aspect-[3/2] object-cover overflow-hidden"
       >
-        <img className="h-full hidden md:block" src={project.thumbnail} />
+        <img
+          className="w-full h-full object-cover hidden md:block"
+          src={project.thumbnail}
+        />
         <img className="h-full block md:hidden" src={project.thumbnailWide} />
       </div>
       <div className="w-full md:w-3/5 md:max-w-[500px] flex flex-col items-start primaryText py-2 lg:py-6">
